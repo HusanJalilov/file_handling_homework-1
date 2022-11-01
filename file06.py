@@ -10,6 +10,7 @@ def main(data:str):
     m=[]
     for i in s:
         m.append(len(i)-1)
+        m[-1]=m[-1]+1
     return m
 
     
