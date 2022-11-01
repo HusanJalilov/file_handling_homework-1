@@ -1,3 +1,6 @@
+from tokenize import Number
+
+
 def main(data:str):
     """
     The data is from the file. Find the smallest of the numeric characters.
@@ -11,7 +14,7 @@ def main(data:str):
     s=[]
     for i in data:
         if i.isdigit():
-            s.append(i)
+            s.append(int(i))
     return min(s)
 
 data=open('txt_file/data09.txt','r').read()
