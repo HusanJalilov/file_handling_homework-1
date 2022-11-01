@@ -6,5 +6,15 @@ def main(data:str):
     Returns:
         int: return answer
     """
+    a=[]
+    s=''.join(data).split()
+    for i in s:
+        if i.isdigit():
+            a.append(int(i))
+    return max(a)
+
 
 # Read data from file
+
+data=open('txt_file/data08.txt','r').read()
+print(main(data))
